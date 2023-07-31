@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: segoe ui;
+    margin: 15px;
+    /* overflow: hidden; */
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-summary{
+    margin: 70px 20px;
+}
+.hero img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.sum-details{
+    background: rgb(251, 254, 255);
+    padding: 20px 20px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.sum-details h1{
+    padding-top: 25px;
+    padding-bottom: 30px;
+    color: rgb(22, 22, 75);
+}   
+.podcast{
+    padding-bottom: 40px;
+    line-height: 30px;
+    color: rgb(157, 157, 165);
+    font-size: 20px;
+}
+.annual-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(244, 244, 252);
+    padding: 20px;
+    border-radius: 1rem;
+}
+.annual{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.annual p{
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    color: rgb(157, 157, 165);
+}
+.change{
+    font-size: 20px;
+    font-weight: bold;
+}
+button{
+    padding: 20px;
+    width: 100%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+.cancel{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(157, 157, 165);
+}
+
+@media (min-width:1000px) {
+
+    .whole{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-summary{
+        width: 40%;
+        height: 100vh;
+        margin: 10px 10px;
+    }
+    .hero img{
+        width: 100%;
+        height: 34vh;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .sum-details h1{
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }   
+    .podcast{
+        padding-bottom: 30px;
+        line-height: 30px;
+        color: rgb(157, 157, 165);
+        font-size: 20px;
+    }
+    .change{
+        cursor: pointer;
+        color: blue;
+    }
+    .change:hover {
+       color: rgb(133, 133, 238);
+    }
+    .annual{
+       padding-right: 200px;
+    }
+    button{
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(133, 133, 238);
+     }
+    .cancel{
+        cursor: pointer;
+    }
+    .cancel:hover{
+        color: rgb(22, 22, 75);
+    }
+}
